@@ -1,0 +1,7 @@
+algo = str(input('Insira alguma coisa aqui: ')).strip()
+div = algo.split()
+print('Seu nome em maiúsculas é {}'.format(algo.upper()))
+print("Seu nome em minúsculas é {}".format(algo.lower()))
+print('Seu nome tem {} letras ao todo'.format(len(algo)-algo.count(' ')))
+print('Seu primeiro nome tem {} letras'.format(len(div[0])))
+#print('Seu primeiro nome tem {} letras'.format(nome.find(' ')))
