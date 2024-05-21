@@ -6,4 +6,4 @@ for c in range(1, 7):
     if c % 2 == 0:
         sm += num
         acu += 1
-print('vc informou {} números e a soma é {}'.format(acu, sm))
+print('Você informou {} números pares e a soma entre eles é: {}'.format(acu, sm))

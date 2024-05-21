@@ -18,6 +18,5 @@ if op == 1:
                    f'Vc tem que se alisar imediatamente' if idade == 18 else 'Ainda faltam {} anos para o alistamento.'.format(
                        18 - idade))
     print(alistamento)
-
 else:
     print('Você não precisa realizar o alistamento obrigatório.')

@@ -1,27 +1,14 @@
-
-
-#----------
-while True:
-    try:
-        num = int(input('Informe o número que deseja converter (ou digite -1 para sair): '))
-        if num == -1:
-            break
-        print('''\nEscolha a base de conversão:
+num = int(input('Informe o número que deseja converter: '))
+print('''Escolha a base de conversão que vc deseja fazer a conversão:
 [1] Conversão binária
 [2] Conversão octal
 [3] Conversão hexadecimal''')
-        opcao = int(input('Escolha uma das opções acima: '))
-        if opcao == 1:
-            resultado = bin(num)[2:]
-            print(f'O número {num} convertido para binário é igual a: {resultado}')
-        elif opcao == 2:
-            resultado = oct(num)[2:]
-            print(f'O número {num} convertido para octal é igual a: {resultado}')
-        elif opcao == 3:
-            resultado = hex(num)[2:]
-            print(f'O número {num} convertido para hexadecimal é igual a: {resultado}')
-        else:
-            print('Ops, opção inválida. Tente novamente.')
-    except ValueError:
-        print('Por favor, insira um número inteiro válido.')
-
+op = int(input('Escolha uma das opções acima: '))
+if op == 1:
+	print('O número {} convertido para binário é igual a: {}'.format(num, bin(num)[2:]))
+elif op == 2:
+	print('O número {} convertido para octal é igual a: {}'.format(num, oct(num)[2:]))
+elif op == 3:
+	print('O número {} convertido para hexadecimal é igual a: {}'.format(num, hex(num)[2:]))
+else:
+	print('Ops, tente dnv')

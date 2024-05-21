@@ -8,4 +8,4 @@ if média >= 7:
 elif média <=5:
     print('aluno em recuperação')
 else:
-    print('aluno reprovado')
+    print('aluno reprovado pois a média é de 7')
